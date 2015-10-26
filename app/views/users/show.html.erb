@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %> </p>
+<h1>Usuário: <%= @user.full_name %> </h1>
+<ul>
+<li>Departamento: <%= @user.department %> </li>
+<li>E-mail: <%= @user.email %> </li>
+</ul>
+<%= link_to 'Editar Cadastro', edit_user_path(@user) %>
+<%= link_to 'Home', root_path %>

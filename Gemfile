@@ -3,8 +3,14 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+#adds the class methods attr_accessible and attr_protected to your models to be able to declare white or black lists of attributes.
+gem 'protected_attributes'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+# To use ActiveModel has_secure_password
+gem 'bcrypt-ruby'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
