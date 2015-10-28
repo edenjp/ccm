@@ -7,7 +7,9 @@ gem 'rails', '4.0.2'
 gem 'protected_attributes'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+
+ gem 'mysql2', '~> 0.3.20', group: :development
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby'
