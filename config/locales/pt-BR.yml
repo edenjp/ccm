@@ -1,0 +1,47 @@
+---
+pt-BR:
+  users:
+    confirmations:
+      success: Email confirmado com sucesso, obrigado!
+    new:
+      title: Cadastro
+    edit:
+      title: Editar perfil
+    show:
+      title: "Perfil: %{user_name}"
+      edit: 'Editar perfil'
+      department: "Departamento: %{department}"
+  signup_mailer:
+    confirm_email:
+      subject: 'Ccm - Confirme seu email'
+      title: 'Seja bem vindo ao Ccm!'
+    body: |
+      Seja bem vindo ao Ccm, %{full_name}.
+      O Ccm irá ajudar  a mantê-lo informado caso venha a acontecer algum problema 
+      com seu veículo, você será notificado prontamente e de forma discreta.
+    confirm_link_html: 'Para você começar a usar o site, acesse o link: %{link}'
+    thanks_html: 'Obrigado por se cadastrar no %{link}.'
+  links:
+    back: Voltar
+  layout:
+    vehicles: Veículo
+    signup: Cadastro
+  general:
+    form_error: Há erros no formulário, por favor verifique.
+  activerecord:
+    models:
+      user: Usuário
+      vehicle: Veículo
+    attributes:
+      user:
+        email: Email
+        full_name: Nome completo
+        department: Departamento
+        password: Senha
+        password_confirmation: Confirme sua senha
+      vehicle:
+        brand: Marca
+        model: Modelo
+        color: Cor
+        type: Tipo de Veículo
+        plaque: Placa

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025231501) do
+ActiveRecord::Schema.define(version: 20151122215917) do
 
   create_table "users", force: true do |t|
     t.string   "full_name"
@@ -20,14 +20,18 @@ ActiveRecord::Schema.define(version: 20151025231501) do
     t.text     "department"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "confirmed_at"
+    t.string   "confirmation_token"
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", using: :btree
 
   create_table "vehicles", force: true do |t|
     t.string   "brand"
     t.string   "model"
     t.text     "color"
     t.string   "type"
-    t.integer  "user_id"
+    t.string   "plaque"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

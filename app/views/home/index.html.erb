@@ -9,6 +9,6 @@ Escolha uma das ações a seguir:
 <h1>Veículos recém cadastrados</h1>
 <ul>
 <% @vehicles.each do |vehicle| %>
-<li><%= link_to vehicle.brand, vehicle %> </li>
+<li><%= link_to vehicle.complete_name, vehicle %> </li>
 <% end %>
 </ul>

@@ -27,17 +27,17 @@ margin: 0 auto;
 height: $header-height;
 background-color: #9ECE71;
 h1 {
-float: left;
-a {
-color: #333;
-font-family: $serif-families;
-font-weight: 400;
-font-size: 2.5em;
-&:hover {
-color: #000;
-}
-}
-}
+	float: left;
+	a {
+		color: #333;
+		font-family: $serif-families;
+		font-weight: 400;
+		font-size: 2.5em;
+		&:hover {
+			color: #000;
+			}
+		}
+	}
 }
 header nav {
 line-height: $header-height;
