@@ -67,7 +67,7 @@ Ccm::Application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
-config.i18n.fallbacks = true
+  config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -79,8 +79,9 @@ config.i18n.fallbacks = true
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = {
-    :host => "calm-badlands-8648.herokuapp.com"
+    :host => "ccm2.herokuapp.com"
   }
+
   config.action_mailer.smtp_settings = {
     :port
     => ENV['MAILGUN_SMTP_PORT'],
@@ -91,7 +92,7 @@ config.i18n.fallbacks = true
     :password
     => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain
-    => 'calm-badlands-8648.herokuapp.com',
+    => 'ccm2.herokuapp.com',
     :authentication => :plain,
   }
   config.action_mailer.delivery_method = :smtp
