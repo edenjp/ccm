@@ -11,7 +11,7 @@ gem 'protected_attributes'
 
 gem 'mysql2', '~> 0.3.20'
 
-#gem 'pg'
+gem 'pg'
 
 gem 'rails_12factor', group: :production
 
